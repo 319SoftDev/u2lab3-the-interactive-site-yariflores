@@ -26,7 +26,7 @@
           <input type="radio" id="black" name="fav_color" value="black">
           <label for="black">Black</label>
         </form>
-        <div id="radio-output">YOUR RADIO OUTPUT HERE</div>
+        <div id="radio-output"></div>
       </div>
 
       <!-- Part 2 -->
@@ -41,22 +41,22 @@
         <h1>Name All 7 Continents</h1>
         <input id="text-input" class="input" type="text">
         <div id="text-output">
-          <div class="row">
-            <img id="north-america" src="img/na.png" alt="North America">
-            <img id="europe" src="img/eu.png" alt="Europe">
-            <img id="asia" src="img/as.png" alt="Asia">
-            <img id="south-america" src="img/sa.png" alt="South America">
-          </div>
-          <div class="row" aria-live="polite" aria-atomic="true">
-            <img id="africa" src="img/af.jpg" alt="Africa">
-            <img id="australia" src="img/au.png" alt="Australia">
-            <img id="antarctica" src="img/ar.jpg" alt="Antarctica">
-          </div>
+            <div class="row">
+                <img id="north-america" class="hidden" src="img/na.png" alt="North America">
+                <img id="europe" class="hidden" src="img/eu.png" alt="Europe">
+                <img id="asia" class="hidden" src="img/as.png" alt="Asia">
+                <img id="south-america" class="hidden" src="img/sa.png" alt="South America">
+            </div>
+            <div class="row" aria-live="polite" aria-atomic="true">
+                <img id="africa" class="hidden" src="img/af.jpg" alt="Africa">
+                <img id="australia" class="hidden" src="img/au.png" alt="Australia">
+                <img id="antarctica" class="hidden" src="img/ar.jpg" alt="Antarctica">
+            </div>
         </div>
         
-        <div id="sr-continent-alert">YOUR CONTINENT OUTPUT HERE</div>
-      </div>
-
+        <div id="sr-continent-alert"></div>
+    </div>
+    
       <!-- Part 4 -->
       <div class="section">
         <h1>Change the Background Color</h1>
@@ -78,3 +78,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
