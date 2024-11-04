@@ -76,18 +76,19 @@ continentInput.addEventListener('change', checkContinent);
 // background change
 
 
-const colorForm = document.querySelector("#color-form");
-const colorInput = document.querySelector("#color-input");
+const colorForm = document.querySelector("#back_color");
+const colorInput = document.querySelector("#color");
 const body = document.body;
 
 const changeBackground = (e) => {
     e.preventDefault(); 
-    if (document.querySelector("#robot-checkbox").checked) {
+    if (document.querySelector("#human").checked) {
         body.style.background = colorInput.value;
     }
 };
 
 colorForm.addEventListener('submit', changeBackground);
+
 
 // getRandomInt() - gets a random number between 1 and 100
 // is_dark(hex) - takes in a hex number (for example #123456) and returns true if it's dark and false if it's light.
